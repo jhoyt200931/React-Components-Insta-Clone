@@ -9,9 +9,10 @@ const Posts = (props) => {
   
   return (
     <div className='posts-container-wrapper'>
-      {posts.map(data => {
-        return <Post username ={posts[data].username} thumbnailUrl = {posts[data].thumbnailUrl} imageUrl = {posts[data].imageUrl} />
-      })}
+      {posts.map(post => {
+       return <Post key={post.id} post = {post}/>
+      })
+      }
       {/* Check the implementation of Post to see what props it requires! */}
       
     </div>

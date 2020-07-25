@@ -8,8 +8,8 @@ const Comments = props => {
 
   return (
     <div>
-      {props.data.map(data => {
-        return <span>{data}</span>
+      {comments.map(comment => {
+        return <Comment comment={comment.comment} key={comment.id} />
       })}
     </div>
   );
