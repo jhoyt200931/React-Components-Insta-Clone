@@ -7,10 +7,10 @@ const Comments = props => {
   const { comments } = props;
 
   return (
-    <div>
-      {/* {comments.map(comment => {
-        return <Comment comment={comments.comment} key={comment.id} />
-      })} */}
+    <div>                                             
+      {comments.map(comment => {
+        return <Comment comment={comment} key={comment.id} />
+      })}
     </div>
   );
 };
